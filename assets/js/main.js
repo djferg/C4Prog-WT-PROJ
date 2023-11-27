@@ -16,13 +16,13 @@ const initApp = () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) { // Above the fold
-                headerName.classList.add('invisible');
-                desktopMenu.classList.add('left-1/2', 'transform', '-translate-x-1/2');
-                desktopMenu.classList.remove('right-4');
+                headerName.classList.add('hidden');
+                desktopMenu.classList.add('justify-center');
+                desktopMenu.classList.remove('justify-between');
             } else { // Below the fold
-                headerName.classList.remove('invisible');
-                desktopMenu.classList.remove('left-1/2', 'transform', '-translate-x-1/2');
-                desktopMenu.classList.add('right-4');
+                headerName.classList.remove('hidden');
+                desktopMenu.classList.remove('justify-center');
+                desktopMenu.classList.add('justify-between');
             }
         })
     }, {threshold: 0.9})

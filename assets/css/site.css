@@ -570,6 +570,22 @@ video {
   top: 0px;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-auto {
+  right: auto;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -688,6 +704,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-12 {
