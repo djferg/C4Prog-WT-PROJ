@@ -6,9 +6,20 @@ module.exports = {
       './contact.html',
       './mywork.html',
       './resume.html',
+      './assets/js/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+        keyframes: {
+            'open-menu': {
+                '0%': {transform: 'translateX(100%)'},
+                '100%': {transform: 'translateX(0%)'},
+            },
+        },
+        animation: {
+            'open-menu': 'open-menu 0.5s ease-in-out forwards',
+        }
+    }
   },
   plugins: [],
 }

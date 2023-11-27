@@ -24,3 +24,8 @@ Only Vanilla JavaSript and Tailwind CSS were used. No other frameworks or librar
 | ↳ 100	   | 255,237,213	 | #ffedd5 |
 | chinook	   | 169,229,187	 | #a9e5bb |
 | ↳ 800	   | 34,89,52	 | #225934 |
+
+### References:
+
+[@DaveGrayTeachesCode](https://www.youtube.com/@DaveGrayTeachesCode):
+[Animated Hamburger Icon, Mobile Menu & Responsive Navbar with Tailwind CSS](https://www.youtube.com/watch?v=0TxMHYCMALE)

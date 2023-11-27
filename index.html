@@ -6,23 +6,47 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/site.css">
+    <script src="assets/js/main.js" defer></script>
     <title>Douglas Fergusson</title>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans overflow-x-hidden">
 
 <!-- Header -->
 <header class="bg-white shadow-md sticky top-0 z-50">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-center">
-        <a href="#" class="hidden text-3xl font-bold">Douglas Fergusson</a>
-        <div class="hidden md:flex space-x-10">
-            <a href="#" class="text-gray-500 hover:text-gray-900 underline underline-offset-4">Home</a>
-            <a href="#" class="text-gray-500 hover:text-gray-900">About</a>
-            <a href="#" class="text-gray-500 hover:text-gray-900">Projects</a>
-            <a href="#" class="text-gray-500 hover:text-gray-900">Resume</a>
-            <a href="#" class="text-gray-500 hover:text-gray-900">Contact</a>
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+        <!-- Brand Name - visible from md breakpoint -->
+        <a href="#" class="text-2xl font-bold">Douglas Fergusson</a>
+
+        <!-- Navigation Links - centered by default, left-aligned from md breakpoint -->
+        <div class="flex">
+            <div class="hidden md:flex space-x-10">
+                <a href="#" class="text-gray-500 hover:text-gray-900">Home</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">About</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">Projects</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">Resume</a>
+                <a href="#" class="text-gray-500 hover:text-gray-900">Contact</a>
+            </div>
         </div>
+
+        <!-- Hamburger Button - visible up to md breakpoint -->
+        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
+            &#9776;
+        </button>
     </nav>
+    <section id="mobile-menu" class="absolute top-0 bg-white w-full text-5xl flex-col justify-content-center animate-open-menu hidden">
+        <button class="text-8xl self-end px-6">
+            &times;
+        </button>
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+            <a href="#" class="w-full text-center py-6 hover:opacity-90">Home</a>
+            <a href="#" class="w-full text-center py-6 hover:opacity-90">About</a>
+            <a href="#" class="w-full text-center py-6 hover:opacity-90">Projects</a>
+            <a href="#" class="w-full text-center py-6 hover:opacity-90">Resume</a>
+            <a href="#" class="w-full text-center py-6 hover:opacity-90">Contact</a>
+        </nav>
+    </section>
 </header>
+
 
 <!-- Splash Section -->
 <section class="text-center py-64 bg-gray-200">
