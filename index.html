@@ -13,12 +13,12 @@
 
 <!-- Header -->
 <header class="bg-white shadow-md sticky top-0 z-50">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 items-center flex">
         <!-- Brand Name - visible from md breakpoint -->
-        <a href="#" class="text-2xl font-bold">Douglas Fergusson</a>
+        <a href="#" id="header-name" class="text-2xl font-bold invisible">Douglas Fergusson</a>
 
         <!-- Navigation Links - centered by default, left-aligned from md breakpoint -->
-        <div class="flex">
+        <nav id='desktop-menu' class="absolute" aria-label="desktop">
             <div class="hidden md:flex space-x-10">
                 <a href="#" class="text-gray-500 hover:text-gray-900">Home</a>
                 <a href="#" class="text-gray-500 hover:text-gray-900">About</a>
@@ -26,13 +26,13 @@
                 <a href="#" class="text-gray-500 hover:text-gray-900">Resume</a>
                 <a href="#" class="text-gray-500 hover:text-gray-900">Contact</a>
             </div>
-        </div>
+        </nav>
 
         <!-- Hamburger Button - visible up to md breakpoint -->
-        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
+        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer right-4 absolute">
             &#9776;
         </button>
-    </nav>
+    </section>
     <section id="mobile-menu" class="absolute top-0 bg-white w-full text-5xl flex-col justify-content-center animate-open-menu hidden">
         <button class="text-8xl self-end px-6">
             &times;
@@ -50,7 +50,7 @@
 
 <!-- Splash Section -->
 <section class="text-center py-64 bg-gray-200">
-    <h1 class="text-6xl md:text-8xl font-bold italic">Douglas Fergusson</h1>
+    <h1 id="splash-name" class="text-6xl md:text-8xl font-bold italic">Douglas Fergusson</h1>
 </section>
 
 <!-- Main Content -->
