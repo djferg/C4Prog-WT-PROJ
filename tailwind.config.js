@@ -5,6 +5,7 @@ module.exports = {
       './about.html',
       './contact.html',
       './mywork.html',
+      './projects.html',
       './resume.html',
       './assets/js/*.js',
   ],
