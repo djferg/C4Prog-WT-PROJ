@@ -1,102 +1,129 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/site.css">
-    <script src="assets/js/main.js" defer></script>
-    <title>Projects - Douglas Fergusson</title>
-</head>
-<body class="bg-gray-100 font-sans overflow-x-hidden">
 
-<!-- Header -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 items-center flex justify-between">
-        <!-- Brand Name - visible from md breakpoint -->
-        <a href="index.html" class="text-2xl font-bold italic">Douglas Fergusson</a>
+<html lang="en" class="bg-white">
 
-        <!-- Navigation Links -->
-        <nav class="hidden md:flex space-x-10" aria-label="desktop">
-            <a href="index.html" class="text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline">Home</a>
-            <a href="about.html" class="text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline">About</a>
-            <a href="projects.html" class="text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline underline">Projects</a>
-            <a href="resume.html" class="text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline">Resume</a>
-            <a href="contact.html" class="text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline">Contact</a>
-        </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./assets/css/site.css">
+        <script src="assets/js/main.js" defer></script>
+        <title>Projects - Douglas Fergusson</title>
+    </head>
 
-        <!-- Hamburger Button - visible up to md breakpoint -->
-        <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer right-4 absolute">
-            &#9776;
-        </button>
-    </section>
-    <section id="mobile-menu" class="absolute top-0 bg-white w-full text-5xl flex-col justify-content-center animate-open-menu hidden">
-        <button class="text-6xl right-4 absolute">
-            &times;
-        </button>
-        <nav class="flex flex-col min-h-screen items-center py-24" aria-label="mobile">
-            <a href="index.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">Home</a>
-            <a href="about.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">About</a>
-            <a href="projects.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline underline">Projects</a>
-            <a href="resume.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">Resume</a>
-            <a href="contact.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">Contact</a>
-        </nav>
-    </section>
-</header>
+    <body class="text-gray-800 bg-gray-100 font-sans overflow-x-hidden">
 
+    <header class="bg-white shadow-md sticky top-0 z-50">
 
-<!-- Splash Section -->
-<section class="text-center py-8 bg-gradient-to-b from-blue-200 to-transparent">
-    <h1 id="splash-name" class="text-4xl md:text-7xl font-bold">Projects</h1>
-</section>
+        <!-- Main Menu -->
+        <section class="h-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 items-center flex justify-between">
 
-<!-- Main Content -->
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <!-- Logo -->
+            <a href="index.html" class="text-2xl font-bold italic">Douglas Fergusson</a>
 
-    <!-- Aside - Small Profile -->
-    <aside class="bg-white rounded-lg shadow-lg p-6 lg:sticky lg:top-24 self-start">
-        <div class="flex justify-center">
-            <img src="https://placehold.co/192?text=me" alt="Profile Image" class="h-48 w-48 rounded-full bg-gray-300 mb-4">
-        </div>
-        <h3 class="text-center text-xl font-semibold mb-3">Projects 📚</h3>
-        <p class="text-gray-600 text-center mb-4"><br>See how I do things!<br> Check out some of my work...</p>
-    </aside>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-10 text-gray-500 underline-offset-4" aria-label="desktop">
 
-    <!-- Projects -->
-    <section class="lg:col-span-2 mt-12 lg:mt-0">
-        <!-- Project 1 -->
-        <article class="h-72 mb-10 relative bg-gray-300 rounded-lg overflow-hidden">
-            <img src="https://placehold.co/300x192?text=sample_project" alt="Project Image" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-200 to-transparent"></div>
-            <section class="relative p-6">
-                <h2 class="text-2xl font-bold mb-2">Sample Project</h2>
-                <p class="mb-4 max-w-md">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, neque at suscipit vehicula...
-                </p>
-                <a href="mywork.html" class="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded hover:bg-indigo-800 transition-colors">More...</a>
-            </section>
-        </article>
-        <!-- Project 2 -->
-        <article class="h-72 mb-10 relative bg-gray-300 rounded-lg overflow-hidden">
-            <img src="https://placehold.co/300x192?text=sample_project" alt="Project Image" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-200 to-transparent"></div>
-            <section class="relative p-6">
-                <h2 class="text-2xl font-bold mb-2">Sample Project</h2>
-                <p class="mb-4 max-w-md">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, neque at suscipit vehicula...
-                </p>
-                <a href="mywork.html" class="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded hover:bg-indigo-800 transition-colors">More...</a>
-            </section>
-        </article>
+                <a href="index.html" class="hover:text-gray-900 hover:underline">Home</a>
+
+                <a href="about.html" class="hover:text-gray-900 hover:underline">About</a>
+
+                <a href="projects.html" class="underline">Projects</a>
+
+                <a href="resume.html" class="hover:text-gray-900 hover:underline">Resume</a>
+
+                <a href="contact.html" class="hover:text-gray-900 hover:underline">Contact</a>
+
+            </nav>
+
+            <!-- Hamburger Button -->
+            <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer absolute right-4">
+                &#9776;
+            </button>
+
+        </section>
+
+        <!-- Mobile Menu -->
+        <section id="mobile-menu" class="absolute top-0 bg-white w-full text-5xl flex-col justify-content-center animate-open-menu hidden">
+
+            <!-- Close Button -->
+            <button class="text-6xl right-4 absolute">
+                &times;
+            </button>
+
+            <!-- Navigation -->
+            <nav class="flex flex-col min-h-screen items-center py-24" aria-label="mobile">
+
+                <a href="index.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">Home</a>
+
+                <a href="about.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">About</a>
+
+                <a href="projects.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline underline">Projects</a>
+
+                <a href="resume.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">Resume</a>
+
+                <a href="contact.html" class="w-full text-center py-6 hover:opacity-90 underline-offset-4 hover:underline">Contact</a>
+
+            </nav>
+
+        </section>
+
+    </header>
+
+    <!-- Splash Section -->
+    <section class="text-center py-8 bg-gradient-to-b from-blue-200 to-transparent">
+        <h1 id="splash-name" class="text-4xl md:text-7xl font-bold">Projects</h1>
     </section>
 
-</main>
+    <main class="bg-gray-100 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 grid grid-cols-1 lg:grid-cols-3 gap-12">
 
-<!-- Footer -->
-<footer class="bg-white shadow-md py-4 text-center">
-    <p>© Copyright 2023 Douglas Fergusson</p>
-</footer>
+        <!-- Aside - Small Profile -->
+        <aside class="bg-white rounded-lg shadow-lg p-6 lg:sticky lg:top-24 self-start">
+            <div class="flex justify-center">
+                <img src="assets/img/me.png" alt="Profile Image" class="h-48 w-48 rounded-full bg-gray-300 mb-4">
+            </div>
+            <h3 class="text-center text-xl font-semibold mb-3">Projects 📚</h3>
+            <p class="text-gray-600 text-center mb-4"><br>See how I do things!<br> Check out some of my work...</p>
+        </aside>
 
-</body>
+        <!-- Projects -->
+        <section class="lg:col-span-2 mt-12 lg:mt-0">
+            <!-- Project 1 -->
+            <article class="mb-10 relative bg-gray-300 rounded-lg overflow-hidden">
+                <img src="assets/img/proj_wt_port.png" alt="Project Image" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-200 to-transparent"></div>
+                <section class="relative p-6 w-2/3">
+                    <h2 class="text-2xl font-bold mb-2">Web Technologies Portfolio</h2>
+                    <p class="mb-4 max-w-md">
+                        A portfolio piece demonstrating my skills gained as part of my studies completing Certificate IV in Information Technology. This project was part of my Web Technologies cluster and explored vanilla HTML, CSS, and JavaScript, and finally the Tailwind CSS framework.
+                    </p>
+                    <a href="mywork.html" class="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded hover:bg-indigo-800 transition-colors">More...</a>
+                </section>
+            </article>
+            <!-- Project 2 -->
+            <article class="mb-10 relative bg-gray-300 rounded-lg overflow-hidden">
+                <img src="assets/img/proj_wt_proj.png" alt="Project Image" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-200 via-gray-200 to-transparent"></div>
+                <section class="relative p-6 w-2/3">
+                    <h2 class="text-2xl font-bold mb-2">Web Technologies Project</h2>
+                    <p class="mb-4 max-w-md">
+                        Building on the skills gained from my Web Technologies portfolio, my final assessment project was to create this very portfolio website.
+                    </p>
+                    <a href="https://github.com/djferg/C4Prog-WT-PROJ" class="inline-block bg-indigo-600 text-white font-medium py-2 px-4 rounded hover:bg-indigo-800 transition-colors">Source</a>
+                </section>
+            </article>
+        </section>
+
+    </main>
+
+    <footer class="h-40 bg-white shadow-md py-4 text-center">
+
+        <!-- Copyright -->
+        <p>© Copyright 2023 Douglas Fergusson</p>
+
+    </footer>
+
+    </body>
+
 </html>

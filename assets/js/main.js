@@ -1,7 +1,7 @@
 const initApp = () => {
     const hamburgerButton = document.getElementById('hamburger-button')
     const mobileMenu = document.getElementById('mobile-menu')
-    const desktopMenu = document.getElementById('desktop-menu')
+    const desktopMenu = document.getElementById('main-menu')
     const headerName = document.getElementById('header-name')
     const splashName = document.getElementById('splash-name')
 
